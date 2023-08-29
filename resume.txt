@@ -1,0 +1,21 @@
+
+John Doe
+Web Developer
+
+Summary:
+Experienced web developer with a strong background in front-end and back-end technologies.
+
+Skills:
+- HTML, CSS, JavaScript
+- Node.js, Express.js
+- React, Vue.js
+- MongoDB, MySQL
+
+Experience:
+Web Developer | ABC Company
+- Developed and maintained web applications.
+- Collaborated with cross-functional teams to deliver high-quality software.
+
+Education:
+Bachelor of Computer Science | XYZ University
+- Graduated with honors.
