@@ -17,7 +17,7 @@ async function generatePDF(resumeContent) {
 
   const resume_dir = "./resume_templates/";
 
-  let resumeHTML = readHtmlFile("light.html");
+  let resumeHTML = readHtmlFile(resume_dir + "Resume2_W_Y.html");
 
   await page.setContent(resumeHTML);
   const pdfBuffer = await page.pdf({
