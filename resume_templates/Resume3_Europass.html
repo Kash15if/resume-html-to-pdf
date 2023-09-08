@@ -4,6 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css"
+    />
+ 
+
     <style>
       body {
         padding: 15px;
@@ -34,6 +46,54 @@
       section {
         margin: 15px 5px;
       }
+
+      .sub-section{
+        display: flex;
+      }
+      
+      .sub-section > .left-section{
+        flex: 1;
+      }
+
+      .sub-section > .right-section{
+        flex: 4;
+      }
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+
+      h1 {
+        font-size: 34px;
+        margin: 0;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 22px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 18px;
+        margin: 0;
+        font-weight: bold;
+      }
+      h5 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .title{
+        margin: 10px 0;
+      }
     </style>
   </head>
 
@@ -41,7 +101,7 @@
     <div class="top">
       <div class="image">
         <img
-          src="C:\Users\KashifAhmad\Downloads\bigger1_1.jpg"
+          src="https://avatars.githubusercontent.com/u/43416961?v=4"
           alt="profile photo"
         />
       </div>
@@ -65,55 +125,231 @@
       </div>
     </div>
 
-    <div class="bottom">
       <section class="work">
-        <h1>title</h1>
-        <div class="left-section">
-          <h3>title</h3>
+        <div class="title">
+          <h3>Work Experience</h3>
         </div>
-        <div class="right-section">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+
+        <div class="sub-section">
+          <div class="left-section">
+            Jul 2022 - Present 
+          </div>
+          <div class="right-section">
+           <h5>Software Engineer</h5> 
+            <p class="company">
+              Greenwave Solutions Pvt. Ltd., Kolkata, India
+            </p>
+            <ul>
+              <li>
+                Led an internal employee service portal for company
+                employees, featuring leave management, claims processing,
+                notifications, and access to salary slips. All senstive
+                values are encypted
+              </li>
+              <li>
+                Led the development and redevelopment of multiple modules in
+                the Digital Logbooks and Workflow, which is the product of
+                our company.
+              </li>
+              <li>
+                Dockerized multiple monolithic applications and
+                microservices to simplify their deployment, enhance
+                customizability, and enable easy deploymen
+              </li>
+              <li>
+                Implemented a user authentication and security module that
+                eliminated 100 percent paper logbook usage and enabled
+                sequential workflow of multiple jobs in the industry.
+              </li>
+              <li>
+                Configured encrypted database credentials inside the
+                property files using node.js API
+              </li>
+              <li>
+                Developed a Java application for multiple clients to
+                transfer data between PostgreSQL, MS SQL, MySQL, OracleDB
+                and MongoDB databases. The application was integrated with a
+                scheduler to automate the data transfer process at regular
+                intervals.
+              </li>
+            </ul>
+            <p class="tech-stack">
+              Tech stack in use: React.js, Node.js, Redux, Java, Spring
+              Boot, JSF, SQL, PotgreSQL, Docker, jwt, bcrypt.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="sub-section">
+          <div class="left-section">
+            July 2021 - June 2022
+          </div>
+          <div class="right-section">
+           <h5> Assiociate Software Engineer</h5>
+            <p class="company">
+              Greenwave Solutions Pvt. Ltd., Kolkata, India
+            </p>
+            <ul>
+              <li>
+                Led the transformation of a large JSF monolith to
+                microservices using React and Spring Boot and implemented
+                real-time data visualization with web socket integration.
+              </li>
+              <li>
+                Utilized JavaScript’s event loop concept to optimize page
+                load time. and by breaking down each component of the page
+                into separate responsibilities, page load time was reduced
+                by around 50 percent (up to 90 percent for larger datasets).
+              </li>
+              <li>
+                Created robust APIs in Node.js for end-to-end data transfer
+                and client-facing REST APIs for seamless interaction with
+                the products.
+              </li>
+              <li>
+                Developed the backend for a PTC Thingworx platform for a
+                client.
+              </li>
+            </ul>
+            <p class="tech-stack">
+              Tech stack used: React.js, Node.js, Redux, Graphql,
+              TypeScript, JavaScript, MsSQL, PostgreSQL , MongoDB, MySQL
+              Socket.IO, Java, Chart.js, Express.js, JSF, HTML, CSS, Mui
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="left-section">
+            April 2021 - June 2021
+          </div>
+          <div class="right-section">
+           <h5> Software Intern</h5>
+            <p class="company">
+              Greenwave Solutions Pvt. Ltd., Kolkata, India
+            </p>
+            <ul>
+              <li>Worked as an SQL and Thingworx developer .</li>
+              <li>
+                Improved reporting rates by developing dashboard and
+                reporting system on PTC Thingworx
+              </li>
+            </ul>
+            <p class="tech-stack">
+              Tech stack used: JavaScript, SQL, PTC Thingworx, React.js.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="education">
-        <div class="left-section">
-          <h1>title</h1>
-        </div>
-        <div class="right-section">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </section>
+     
+        <section class="education">
+          <div class="title">
+            <h3>Education</h3>
+          </div>
+  
+          <div class="sub-section">
+            <div class="left-section">
+             July 2017 - June 2021
+            </div>
+            <div class="right-section">
+              <p>
+                <strong class="education-name"
+                  >B. Tech. in Computer Science</strong
+                >
+                <br /><span class="education-address"
+                  >University of Calcutta, ( June 2021 )
+                </span>
+              </p>
+            </div>
+          </div>
 
-      <section class="skills">
-        <h3>title</h3>
-        <div class="section-content">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </section>
+          <div class="sub-section">
+            <div class="left-section">
+             April 2016
+            </div>
+            <div class="right-section">
+              <p>
+                <strong>Higher Secondary</strong><br />
+                <span class="education-address"
+                  >SAM Senior Secondary High School (CBSE)
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <section class="languages">
-        <h3>title</h3>
-        <div class="section-content">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </section>
+          <section class="skills">
+            <div class="title">
+              <h3>Skills</h3>
+            </div>
+    
+            <div class="sub-section">
+              <div class="left-section">
+                Programming Languages
+              </div>
+              <div class="right-section">
+                <p class="company">
+                  JavaScript, Java, HTML, CSS
+                </p>
+              </div>
+            </div>
+
+            <div class="sub-section">
+              <div class="left-section">
+                Frameworks and Libraries
+              </div>
+              <div class="right-section">
+                <p class="company">
+                  Node.js, React.js, Spring Boot, Express.js, JSF-Primefaces,
+                  PrimefaceReact, Bootstrap, Mui, Chart.js, React.native,
+                  Vue.js, Socket.IO
+                </p>
+              </div>
+            </div>
+
+            <div class="sub-section">
+              <div class="left-section">
+                Database
+              </div>
+              <div class="right-section">
+                <p class="company">
+                  MySQL, MS SQL, PostgreSQL, PL/PGSQL, MongoDB, Firebase
+                </p>
+              </div>
+            </div>
+
+            <div class="sub-section">
+              <div class="left-section">
+                Other Technologies
+              </div>
+              <div class="right-section">
+                <p class="company">
+                  Docker, Git, GitHub, SVN, PTC Thingworx
+                </p>
+              </div>
+            </div>
+          </section>
+
+            <section class="achievements">
+              <div class="title">
+                <h3>Achievements</h3>
+              </div>
+      
+              <div class="sub-section">
+                <div class="left-section"></div>
+                <div class="right-section">
+                  <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus distinctio.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus distinctio.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus distinctio.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+
     </div>
   </body>
 </html>
