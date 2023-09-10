@@ -16,8 +16,7 @@ async function generatePDF(resumeContent) {
   const page = await browser.newPage();
 
   const resume_dir = "./resume_templates/";
-
-  let resumeHTML = readHtmlFile(resume_dir + "Resume4.html");
+  let resumeHTML = readHtmlFile(resume_dir + fileName + ".html");
 
   await page.setContent(resumeHTML);
   const pdfBuffer = await page.pdf({
@@ -25,9 +24,8 @@ async function generatePDF(resumeContent) {
     format: "A4",
     printBackground: true,
   });
-
+  
   await browser.close();
-
   return pdfBuffer;
 }
 
