@@ -11,6 +11,12 @@ const resumeContent = {
   about: `As a Full Stack Developer with around 2 years of experience...`, // Include the rest of the content
 };
 
+
+app.get("/", (req, res)=>{
+  res.send("/");
+})
+
+
 app.get("/resume", async (req, res) => {
 
   let fileName = req.query.file;
