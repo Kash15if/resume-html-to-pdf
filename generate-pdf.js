@@ -11,7 +11,7 @@ function readHtmlFile(filePath) {
   }
 }
 
-async function generatePDF(resumeContent) {
+async function generatePDF(fileName) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
