@@ -2,6 +2,8 @@ const puppeteer = require("puppeteer");
 const fs = require("fs");
 
 function readHtmlFile(filePathInput) {
+
+  console.log(filePathInput)
   try {
     const data = fs.readFileSync(filePathInput, "utf8");
     return data;
@@ -14,6 +16,9 @@ function readHtmlFile(filePathInput) {
 async function generatePDF(fileNameInput) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+
+  
+  console.log(fileNameInput + ".html");
 
   const resume_dir = "./resume_templates/";
   let resumeHTML = readHtmlFile(resume_dir + fileNameInput + ".html");

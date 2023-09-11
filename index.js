@@ -26,7 +26,7 @@ app.get("/resume", async (req, res) => {
 
   let fileNameInput = req.query.file;
 
-  console.log("resume called", fileNameInput)
+  // console.log("resume called", fileNameInput)
   const pdfBuffer = await generatePDF(fileNameInput); // Call the function to generate PDF
 
   res.setHeader("Content-Type", "application/pdf");
