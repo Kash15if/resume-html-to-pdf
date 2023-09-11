@@ -21,8 +21,8 @@ app.get("/test", (req, res)=>{
 
 app.get("/resume", async (req, res) => {
 
-  let fileName = req.query.file;
-  const pdfBuffer = await generatePDF(fileName); // Call the function to generate PDF
+  let fileNameInput = req.query.file;
+  const pdfBuffer = await generatePDF(fileNameInput); // Call the function to generate PDF
 
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader("Content-Disposition", "inline; filename=resume.pdf");

@@ -1,9 +1,9 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
-function readHtmlFile(filePath) {
+function readHtmlFile(filePathInput) {
   try {
-    const data = fs.readFileSync(filePath, "utf8");
+    const data = fs.readFileSync(filePathInput, "utf8");
     return data;
   } catch (err) {
     console.error("Error reading the file:", err);
@@ -11,12 +11,14 @@ function readHtmlFile(filePath) {
   }
 }
 
-async function generatePDF(fileName) {
+async function generatePDF(fileNameInput) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
   const resume_dir = "./resume_templates/";
-  let resumeHTML = readHtmlFile(resume_dir + fileName + ".html");
+  let resumeHTML = readHtmlFile(resume_dir + fileNameInput + ".html");
+
+  console.log(resume_dir + fileNameInput + ".html");
 
   await page.setContent(resumeHTML);
   const pdfBuffer = await page.pdf({
