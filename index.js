@@ -36,11 +36,6 @@ app.get("/resume", async (req, res) => {
     res.status(500).send("Error converting HTML to PDF");
   }
 
-
-
-  res.setHeader("Content-Type", "application/pdf");
-  res.setHeader("Content-Disposition", "inline; filename=resume.pdf");
-  res.send(pdfBuffer);
 });
 
 app.listen(port, () => {
