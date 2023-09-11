@@ -26,8 +26,17 @@ app.get("/resume", async (req, res) => {
 
   let fileNameInput = req.query.file;
 
-  // console.log("resume called", fileNameInput)
-  const pdfBuffer = await generatePDF(fileNameInput); // Call the function to generate PDF
+  try {
+    const pdfBuffer = await generatePDF(fileNameInput); // Call the function to generate PDF
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", "inline; filename=converted.pdf");
+    res.send(pdfBuffer);
+  } catch (error) {
+    console.error("Error converting HTML to PDF:", error);
+    res.status(500).send("Error converting HTML to PDF");
+  }
+
+
 
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader("Content-Disposition", "inline; filename=resume.pdf");
