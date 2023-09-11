@@ -14,8 +14,8 @@ const resumeContent = {
 };
 
 
-app.get("/", (req, res)=>{
-  res.send("/");
+app.get("/test", (req, res)=>{
+  res.send("tested");
 })
 
 
