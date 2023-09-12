@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
+const path = require("path");
 
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
