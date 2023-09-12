@@ -1,29 +1,22 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
 
 const port = process.env.PORT || 3000;
-
 
 // Import the generatePDF function from generatePDF.js
 const generatePDF = require("./generate-pdf");
 
-const resumeContent = {
-  name: "KASHIF AHMAD",
-  contact: "+91 97098 13874 ⋄ Kolkata, India",
-  email: "kash151if@gmail.com",
-  linkedin: "LinkedInLink",
-  github: "GitHubLink",
-  about: `As a Full Stack Developer with around 2 years of experience...`, // Include the rest of the content
-};
-
-
-app.get("/test", (req, res)=>{
-  res.send("tested");
-})
-
+// const resumeContent = {
+//   name: "KASHIF AHMAD",
+//   contact: "+91 9709813874 , Kolkata, India",
+//   email: "kash151if@gmail.com",
+//   linkedin: "",
+//   github: "",
+//   about: ``,
+// };
 
 app.get("/resume", async (req, res) => {
-
   let fileNameInput = req.query.file;
 
   try {
@@ -35,10 +28,8 @@ app.get("/resume", async (req, res) => {
     console.error("Error converting HTML to PDF:", error);
     res.status(500).send("Error converting HTML to PDF");
   }
-
 });
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
-

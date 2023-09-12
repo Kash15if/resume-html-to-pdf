@@ -1,9 +1,9 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
-function readHtmlFile(filePathInput) {
+const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
-  console.log(filePathInput)
+function readHtmlFile(filePathInput) {
   try {
     const data = fs.readFileSync(filePathInput, "utf8");
     return data;
@@ -13,21 +13,29 @@ function readHtmlFile(filePathInput) {
   }
 }
 
-async function generatePDF(fileNameInput) {
+function getBrowser() {
+  if (IS_PRODUCTION) {
+    return puppeteer.connect({
+      browserWSEndpoint:
+        "wss://chrome.browserless.io?token=" + process.env.BROWSERLESS_TOKEN,
+    });
+  }
 
+  return puppeteer.launch();
+}
+
+async function generatePDF(fileNameInput) {
   const resume_dir = "./resume_templates/";
   let htmlContent = readHtmlFile(resume_dir + fileNameInput + ".html");
 
+  const browser = await getBrowser();
 
-  const browser = await puppeteer.launch();
   const page = await browser.newPage();
-
   await page.setContent(htmlContent);
   const pdfBuffer = await page.pdf({ format: "A4" });
-
   await browser.close();
+  
   return pdfBuffer;
-
 }
 
 module.exports = generatePDF;
