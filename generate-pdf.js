@@ -25,9 +25,13 @@ function getBrowser() {
 }
 
 async function generatePDF(fileNameInput) {
-  const resume_dir = "./resume_templates/";
-  let htmlContent = readHtmlFile(resume_dir + fileNameInput + ".html");
 
+  const filePath = path.join(
+    __dirname,
+    "./resume_templates/" + fileNameInput + ".html"
+  );
+  let htmlContent = readHtmlFile(filePath);
+  
   const browser = await getBrowser();
 
   const page = await browser.newPage();
