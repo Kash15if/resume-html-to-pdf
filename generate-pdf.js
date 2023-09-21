@@ -26,20 +26,19 @@ function getBrowser() {
 }
 
 async function generatePDF(fileNameInput) {
-
   const filePath = path.join(
     __dirname,
     "./resume_templates/" + fileNameInput + ".html"
   );
   let htmlContent = readHtmlFile(filePath);
-  
+
   const browser = await getBrowser();
 
   const page = await browser.newPage();
   await page.setContent(htmlContent);
-  const pdfBuffer = await page.pdf({ format: "A4" });
+  const pdfBuffer = await page.pdf({ format: "A4", printBackground: true });
   await browser.close();
-  
+
   return pdfBuffer;
 }
 

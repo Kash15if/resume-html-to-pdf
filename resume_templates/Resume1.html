@@ -15,28 +15,32 @@
     />
 
     <style>
+      body {
+        background-color: blanchedalmond;
+      }
+
       .partition {
         display: flex;
+        background-color: blanchedalmond;
+        border: 3px solid white;
       }
 
       .partition > .left-body {
         flex: 3;
         min-height: 40vh;
-        background-color: blueviolet;
-        margin: 5px;
-        padding: 15px;
+        margin: 3px;
+        padding: 7px;
       }
 
       .partition > .right-body {
         flex: 7;
         min-height: 40vh;
-        background-color: rgb(83, 226, 43);
-        margin: 5px;
-        padding: 15px;
+        margin: 3px;
+        padding: 7px;
       }
 
       .partition > .right-body > section > .section-content {
-        padding: 20px;
+        padding: 5px;
       }
 
       .top,
@@ -44,27 +48,34 @@
         display: flex;
         min-height: 10vh;
         background-color: blanchedalmond;
-        margin: 10px;
+        /* margin: 3px 0; */
+        border: 3px solid white;
       }
 
       .middle > .image {
         flex: 3;
-        margin: 10px;
+        margin: 8px;
+      }
+
+      .middle > .image > img {
+        width: 80%;
+        height: auto;
+        margin: auto;
       }
 
       .middle > .about {
         flex: 7;
-        margin: 10px;
+        margin: 3px 0;
       }
 
       .section-content {
         border-top: 2px solid rgb(0, 75, 160);
-        padding: 10px 5px;
+        padding: 5px 3px;
       }
 
       .top {
         display: flex;
-        padding: 25px;
+        padding: 5px;
         justify-content: space-between;
       }
 
@@ -113,15 +124,15 @@
       .tag-cloud {
         display: inline-block;
         color: white;
-        padding: 8px 20px;
+        padding: 4px 10px;
         font-family: Arial;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: #2196f3;
-        margin-top: 8px;
+        margin: 5px;
       }
 
       section {
-        margin: 15px 5px;
+        margin: 8px 4px;
       }
 
       .projectName {
@@ -132,11 +143,11 @@
       } */
     </style>
   </head>
-  <body style="padding: 5px">
+  <body style="padding: 2px">
     <div class="full-box">
       <div class="top">
         <div class="name">
-          <h1>John Doe</h1>
+          <h1>Kashif Ahmad</h1>
           <p class="designation">Full Stack Developer</p>
         </div>
         <div class="contacts">
@@ -171,14 +182,10 @@
           <section>
             <h3>About</h3>
             <div class="section-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Molestias, esse culpa voluptate perspiciatis ea quod tempore
-              provident nostrum similique repellendus deserunt iste rem quo,
-              explicabo nemo recusandae magni sed eos! Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Fugiat, nisi fuga sapiente
-              officia iusto recusandae illum praesentium totam facere deleniti
-              soluta voluptate illo et distinctio voluptas ipsa iste tempora
-              eum.
+              With 2 years of FMCG sector experience, I'm a Full Stack Developer
+              skilled in React.js, Node.js, MongoDB, PostgreSQL, and Java. I've
+              built impactful projects to tackle real-world challenges,
+              combining technical expertise with industry insights.
             </div>
           </section>
         </div>
@@ -189,13 +196,13 @@
           <section>
             <h3>Awards</h3>
             <div class="section-content">
-              <h4>Enter your award</h4>
-              <p>Companys Name/ Location</p>
-              <p>2014</p>
-
-              <h4>Enter your award</h4>
-              <p>Companys Name/ Location</p>
-              <p>2014</p>
+              <h4>Emmerging star of the year</h4>
+              <p>Greenwave Solutions, Kolkata</p>
+              <p>2022</p>
+              <!-- 
+              <h4></h4>
+              <p></p>
+              <p>2014</p> -->
 
               <!-- More awards -->
             </div>
@@ -203,17 +210,17 @@
           <section>
             <h3>Skills</h3>
             <div class="section-content">
-              <span class="tag-cloud">Ford</span>
-              <span class="tag-cloud">Volvo</span>
-              <span class="tag-cloud">BMW</span>
-              <span class="tag-cloud">Tesla</span>
-              <span class="tag-cloud">Nissan</span>
-              <span class="tag-cloud">Toyota</span>
-              <span class="tag-cloud">Saab</span>
-              <span class="tag-cloud">Porsche</span>
-              <span class="tag-cloud">VW</span>
-              <span class="tag-cloud">Fiat</span>
-              <span class="tag-cloud">Honda</span>
+              <span class="tag-cloud">React.js</span>
+              <span class="tag-cloud">Node.js</span>
+              <span class="tag-cloud">JavaScript</span>
+              <span class="tag-cloud">Java</span>
+              <span class="tag-cloud">SQL</span>
+              <span class="tag-cloud">Docker</span>
+              <span class="tag-cloud">Spring Boot</span>
+              <span class="tag-cloud">Git</span>
+              <span class="tag-cloud">Vue.js</span>
+              <span class="tag-cloud">PostgreSQL</span>
+              <span class="tag-cloud">Next.js</span>
             </div>
           </section>
           <section>
@@ -221,44 +228,83 @@
             <div class="section-content">
               <ul>
                 <li>
-                  <span class="projectName">Project Name 1</span> :
-                  <span class="projectContent"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ex, quod laboriosam reprehenderit molestiae iste assumenda
-                    voluptate repudiandae.</span
+                  <a
+                    href="https://my-projects-rose.vercel.app/#ccomp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="projectLink"
                   >
+                    <span class="projectName inline-block align-middle"
+                      >Custom Components</span
+                    >
+                    <svg
+                      class="w-4 h-4 text-gray-800 dark:text-white inline-block align-middle"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://my-projects-rose.vercel.app/#mbs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="projectLink"
+                  >
+                    <span class="projectName">Meal Booking System</span>
+                    <svg
+                      class="w-4 h-4 text-gray-800 dark:text-white inline-block align-middle"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                      />
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <span class="projectName">Project Name 1</span> :
-                  <span class="projectContent"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ex, quod laboriosam reprehenderit molestiae iste assumenda
-                    voluptate repudiandae.</span
+                  <a
+                    href="https://my-projects-rose.vercel.app/#oep"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="projectLink"
                   >
-                </li>
-                <li>
-                  <span class="projectName">Project Name 1</span> :
-                  <span class="projectContent"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ex, quod laboriosam reprehenderit molestiae iste assumenda
-                    voluptate repudiandae.</span
-                  >
-                </li>
-                <li>
-                  <span class="projectName">Project Name 1</span> :
-                  <span class="projectContent"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ex, quod laboriosam reprehenderit molestiae iste assumenda
-                    voluptate repudiandae.</span
-                  >
-                </li>
-                <li>
-                  <span class="projectName">Project Name 1</span> :
-                  <span class="projectContent"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ex, quod laboriosam reprehenderit molestiae iste assumenda
-                    voluptate repudiandae.</span
-                  >
+                    <span class="projectName">Online Exam Portal</span>
+
+                    <svg
+                      class="w-4 h-4 text-gray-800 dark:text-white inline-block align-middle"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                      />
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -271,7 +317,7 @@
               <ol
                 class="relative border-l border-gray-200 dark:border-gray-700"
               >
-                <li class="mb-10 ml-6">
+                <li class="mb-3 mt-2 ml-6">
                   <span
                     class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
                   >
@@ -290,7 +336,7 @@
                   <h3
                     class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
                   >
-                    Flowbite Application UI v2.0.0
+                    Sofware Engineer
                     <span
                       class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3"
                       >Latest</span
@@ -298,36 +344,26 @@
                   </h3>
                   <time
                     class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                    >Released on January 13th, 2022</time
+                    >July 2022- Current</time
                   >
                   <p
-                    class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+                    class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400"
                   >
-                    Get access to over 20+ pages including a dashboard layout,
-                    charts, kanban board, calendar, and pre-order E-commerce &
-                    Marketing pages.
+                    Led the development of an employee service portal with
+                    encrypted sensitive data, managed leave requests, claims
+                    processing, and notifications. Additionally, oversaw the
+                    creation of Operations360 module, eliminating paper logbook
+                    usage, and developed a data transfer application for
+                    automated transfers among SQL and NoSQL databases with
+                    encryption. Finally, containerized and deployed MERN and JSF
+                    web apps on Tomcat, Node.js, and WildFly using Docker.
                   </p>
-                  <a
-                    href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                    ><svg
-                      class="w-3.5 h-3.5 mr-2.5"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"
-                      />
-                      <path
-                        d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-                      />
-                    </svg>
-                    Download ZIP</a
-                  >
+                  <p>
+                    React.js, Node.js, Express.js, Docker, Redux, JWT, Bcrypt,
+                    Socket.io, SQL.
+                  </p>
                 </li>
-                <li class="mb-10 ml-6">
+                <li class="mb-3 mt-2 ml-6">
                   <span
                     class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
                   >
@@ -346,50 +382,21 @@
                   <h3
                     class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
                   >
-                    Flowbite Figma v1.3.0
+                    Associate Software Engineer
                   </h3>
                   <time
                     class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                    >Released on December 7th, 2021</time
+                    >July 2021 - June 2022</time
                   >
                   <p
                     class="text-base font-normal text-gray-500 dark:text-gray-400"
                   >
-                    All of the pages and components are first designed in Figma
-                    and we keep a parity between the two versions even as we
-                    update the project.
-                  </p>
-                </li>
-                <li class="ml-6">
-                  <span
-                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
-                  >
-                    <svg
-                      class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                      />
-                    </svg>
-                  </span>
-                  <h3
-                    class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Flowbite Library v1.2.2
-                  </h3>
-                  <time
-                    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                    >Released on December 2nd, 2021</time
-                  >
-                  <p
-                    class="text-base font-normal text-gray-500 dark:text-gray-400"
-                  >
-                    Get started with dozens of web components and interactive
-                    elements built on top of Tailwind CSS.
+                    Transformed a JSF monolith into microservices with React and
+                    Spring Boot, achieving real-time data visualization through
+                    web socket integration and significantly improving page load
+                    times. Developed Node.js APIs for efficient data transfer
+                    and client-facing REST APIs, as well as integrated multiple
+                    APIs into a client's PTC Thingworx platform.
                   </p>
                 </li>
               </ol>
@@ -401,7 +408,7 @@
               <ol
                 class="relative border-l border-gray-200 dark:border-gray-700"
               >
-                <li class="mb-10 ml-6">
+                <li class="mb-3 mt-2 ml-6">
                   <span
                     class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
                   >
@@ -420,107 +427,16 @@
                   <h3
                     class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
                   >
-                    Flowbite Application UI v2.0.0
+                    B.Tech in Computer Science and Engineering
                     <span
                       class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3"
-                      >Latest</span
+                      >2021</span
                     >
                   </h3>
                   <time
                     class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                    >Released on January 13th, 2022</time
+                    >University of Calcutta</time
                   >
-                  <p
-                    class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-                  >
-                    Get access to over 20+ pages including a dashboard layout,
-                    charts, kanban board, calendar, and pre-order E-commerce &
-                    Marketing pages.
-                  </p>
-                  <a
-                    href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                    ><svg
-                      class="w-3.5 h-3.5 mr-2.5"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"
-                      />
-                      <path
-                        d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-                      />
-                    </svg>
-                    Download ZIP</a
-                  >
-                </li>
-                <li class="mb-10 ml-6">
-                  <span
-                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
-                  >
-                    <svg
-                      class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                      />
-                    </svg>
-                  </span>
-                  <h3
-                    class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Flowbite Figma v1.3.0
-                  </h3>
-                  <time
-                    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                    >Released on December 7th, 2021</time
-                  >
-                  <p
-                    class="text-base font-normal text-gray-500 dark:text-gray-400"
-                  >
-                    All of the pages and components are first designed in Figma
-                    and we keep a parity between the two versions even as we
-                    update the project.
-                  </p>
-                </li>
-                <li class="ml-6">
-                  <span
-                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
-                  >
-                    <svg
-                      class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                      />
-                    </svg>
-                  </span>
-                  <h3
-                    class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Flowbite Library v1.2.2
-                  </h3>
-                  <time
-                    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                    >Released on December 2nd, 2021</time
-                  >
-                  <p
-                    class="text-base font-normal text-gray-500 dark:text-gray-400"
-                  >
-                    Get started with dozens of web components and interactive
-                    elements built on top of Tailwind CSS.
-                  </p>
                 </li>
               </ol>
             </div>
