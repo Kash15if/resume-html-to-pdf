@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kashif Ahmad - Resume</title>
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
 
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css"
+    />
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #111;
+        background-color: #333;
         color: #eee;
       }
 
@@ -33,9 +39,9 @@
       .education,
       .skills,
       .projects {
-        padding: 20px;
-        margin: 20px 0;
-        margin-top: 30px;
+        padding: 8px 20px;
+        margin: 5px 0;
+        margin-top: 10px;
         background-color: #333;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
       }
@@ -45,16 +51,16 @@
       }
 
       .job {
-        margin: 20px 0;
+        margin: 5px 0;
       }
 
       .dates {
-        font-weight: bold;
+        /* font-weight: bold; */
         color: #888;
       }
 
       .company {
-        color: #007bff;
+        color: #888;
       }
 
       ul {
@@ -73,6 +79,39 @@
       td {
         border: 1px solid #444;
         color: #eee;
+      }
+
+      .project-links {
+        margin-top: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 21px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      h3 {
+        /* color: #02526a; */
+        font-size: 18px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 15px;
+        margin: 0;
+        font-weight: bold;
+      }
+      h5 {
+        font-size: 12px;
+        margin: 0;
+        /* font-weight: bold; */
       }
 
       /* Add more dark mode styles above */
@@ -99,33 +138,68 @@
         </p>
       </address>
     </header>
-    <section class="about">
+    <!-- <section class="about">
       <h2>About Me</h2>
       <p>
-        As a Full Stack Developer with around 2 years of experience in the FMCG
-        sector, I bring a unique combination of technical expertise and industry
-        knowledge to the table. With a strong tech stack that includes React.js,
-        Node.js, MongoDB, PostgreSQL, and Java, I am passionate about
-        problem-solving and have built several cool projects to solve real-world
-        issues.
+        With 2 years of FMCG sector experience, I'm a Full Stack Developer
+        skilled in React.js, Node.js, MongoDB, PostgreSQL, and Java. I've built
+        impactful projects to tackle real-world challenges, combining technical
+        expertise with industry insights.
       </p>
-    </section>
+    </section> -->
     <section class="work">
       <h2>Work Experience</h2>
       <div class="job">
-        <h3>Software Developer</h3>
-        <p class="dates">Jul 2022 - Present</p>
+        <h4>
+          Software Developer <span class="dates">(Jul 2022 - Present)</span>
+        </h4>
         <p class="company">Greenwave Solutions Pvt. Ltd., Kolkata, India</p>
         <ul>
-          <li>Led an internal employee service portal...</li>
-          <!-- ... More list items ... -->
+          <li>
+            Spearheaded secure employee portal development, enabling leave
+            management, claims processing, and salary slip access with
+            encryption for sensitive data.
+          </li>
+          <li>
+            Transformed Operations360 by introducing a paperless workflow
+            system, enhancing efficiency and security.
+          </li>
+          <li>
+            Streamlined data transfers across SQL and NoSQL databases through
+            automated scheduling and encryption, leveraging React.js, Node.js,
+            Express.js, Docker, Redux, JWT, Bcrypt, and Socket.io technologies.
+          </li>
         </ul>
         <p class="tech-stack">
-          Tech stack in use: React.js, Node.js, Redux, Java, JSF, SQL, Docker,
-          jwt, bcrypt.
+          Tech stack in use: React.js, Node.js, Express.js, Docker, Redux, JWT,
+          Bcrypt, Socket.io, SQL.
         </p>
       </div>
-      <!-- ... More job entries ... -->
+
+      <div class="job">
+        <h4>
+          Associate Software Engineer
+          <span class="dates">(Jul 2021 - Jun 2022 )</span>
+        </h4>
+        <p class="company">Greenwave Solutions Pvt. Ltd., Kolkata, India</p>
+        <ul>
+          <li>
+            Led the transformation of a JSF monolith to microservices using
+            React and Spring Boot, enabling real-time data visualization with
+            web socket integration. Optimized page load time by 50% (up to 90%
+            for larger datasets) using JavaScript’s event loop and component
+            separation.
+          </li>
+          <li>
+            Built Node.js APIs for data transfer and client-facing REST APIs for
+            seamless product interaction.
+          </li>
+        </ul>
+        <p class="tech-stack">
+          Tech stack used: React.js, Node.js, Express.js, PostgreSQL, Socket.io,
+          Chart.js, Mui, GraphQL, MongoDB, Bootstrap, PTC Thingworx.
+        </p>
+      </div>
     </section>
     <section class="education">
       <h2>Education</h2>
@@ -141,6 +215,26 @@
           <td>Programming Languages</td>
           <td>JavaScript, Java, HTML, CSS</td>
         </tr>
+
+        <tr>
+          <td>Frameworks and Libraries</td>
+          <td>
+            Node.js, React.js, Spring Boot, Express.js, JSF-Primefaces,
+            PrimefaceReact, Bootstrap, Mui, Chart.js, React.native, Vue.js,
+            Socket.IO
+          </td>
+        </tr>
+
+        <tr>
+          <td>Database</td>
+          <td>MySQL, MS SQL, PostgreSQL, PL/PGSQL, MongoDB, Firebase</td>
+        </tr>
+
+        <tr>
+          <td>Other Technologies</td>
+          <td>Docker, Git, GitHub, SVN, PTC Thingworx</td>
+        </tr>
+
         <!-- ... More skill rows ... -->
       </table>
     </section>
@@ -148,14 +242,199 @@
       <h2>Personal Projects</h2>
       <ul>
         <li>
-          <strong>Custom Components</strong> -
-          <a href="https://custom-components-orpin.vercel.app/"
-            ><i class="fas fa-external-link-alt"></i
-          ></a>
-          A collection of custom React components...
+          <a href="https://my-projects-rose.vercel.app/">
+            <span class="projectName">Project Highlight</span>
+
+            <svg
+              class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          : Built a user-friendly web app that showcases all of my projects. It
+          includes video demos, description, links to the live versions and
+          Github repo
         </li>
-        <!-- ... More project items ... -->
       </ul>
+      <p class="project-links">
+        <a href="https://my-projects-rose.vercel.app#ccomp">
+          <span class="projectName">Custom Components</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+        &ensp;
+        <a href="https://my-projects-rose.vercel.app#mbs">
+          <span class="projectName">Advance Meal Booking</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+
+        &ensp;
+        <a href="https://my-projects-rose.vercel.app#oep">
+          <span class="projectName">Online Exam Portal</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+
+        &ensp;
+        <a href="https://my-projects-rose.vercel.app#fer">
+          <span class="projectName">Flat Expense Record</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+
+        &ensp;
+        <a href="https://my-projects-rose.vercel.app#sp">
+          <span class="projectName">Study Planner</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+
+        &ensp;
+        <a href="https://my-projects-rose.vercel.app">
+          <span class="projectName">Snake & Ladder</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+
+        &ensp;
+        <a href="https://my-projects-rose.vercel.app#cov19">
+          <span class="projectName">Covid 19 tracker</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+
+        &ensp;
+        <a href="https://my-projects-rose.vercel.app#bport">
+          <span class="projectName">Portfolio</span>
+
+          <svg
+            class="w-4 h-4 text-blue-400 dark:text-gray-400 inline-block align-middle"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+      </p>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
 </html>
