@@ -13,26 +13,48 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css"
     />
     <style>
+      body {
+        padding: 10px;
+      }
       .top {
         display: flex;
-        padding: 25px;
+        padding: 5px;
         justify-content: space-between;
       }
 
       .top > .about {
         flex: 7;
         text-align: left;
-        margin: 20px;
+        margin: 5px;
+      }
+
+      .top > .about > .name {
+        width: 90%;
+        text-align: left;
+        margin: 10px auto;
+        color: #02526a;
+      }
+
+      .designation {
+        font-weight: 500;
+        color: #02526ab6;
+      }
+
+      .top > .about > .contacts {
+        width: 90%;
+        text-align: left;
+        margin: auto;
+        color: #02526ab6;
       }
 
       .top > .photo {
         flex: 3;
         text-align: left;
-        margin: 20px;
+        margin: 5px;
       }
 
       .bottom {
-        padding: 25px;
+        padding: 5px;
       }
 
       .partition {
@@ -42,25 +64,63 @@
       }
 
       .partition > .left-part {
-        flex: 3;
+        flex: 2;
         text-align: end;
-        margin: 15px;
+        margin: 5px;
       }
 
       .partition > .right-part {
-        flex: 7;
-        margin: 15px;
+        flex: 8;
+        margin: 5px;
         text-align: start;
       }
       .tag-cloud {
         display: inline-block;
         color: white;
-        padding: 8px 20px;
+        padding: 5px 14px;
         font-family: Arial;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: #468a91;
         /* background-color: #4caf50; */
-        margin-top: 8px;
+        margin-top: 5px;
+      }
+
+      ul {
+        list-style: disc;
+        padding-left: 10px;
+      }
+
+      h1 {
+        font-size: 34px;
+        margin: 0;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 22px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      h3 {
+        color: #02526a;
+        font-size: 20px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 18px;
+        margin: 0;
+        font-weight: bold;
+      }
+      h5 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .title {
+        margin: 10px 0;
       }
     </style>
   </head>
@@ -68,7 +128,7 @@
     <div class="top">
       <div class="about">
         <div class="name">
-          <h1>John Doe</h1>
+          <h1>Kashif Ahmad</h1>
           <p class="designation">Full Stack Developer</p>
         </div>
         <div class="contacts">
@@ -101,87 +161,112 @@
 
     <div class="bottom">
       <section>
-        <h3>TItlwe</h3>
+        <h3>Experience</h3>
         <div class="section-content">
           <div class="partition">
-            <div class="left-part">dates</div>
+            <div class="left-part">July 2022 - Current</div>
             <div class="right-part">
-              <h5>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-                quibusdam veritatis repudiandae illum natus perspiciatis
-                recusandae esse, itaque labore iste, id voluptatum, libero
-                similique ducimus soluta voluptatem quasi animi officiis.
-              </h5>
+              <h5>Software Engineer</h5>
+              <p class="company">
+                Greenwave Solutions Pvt. Ltd., Kolkata, India
+              </p>
               <ul>
-                <li>abcd</li>
-                <li>abcd</li>
-                <li>abcd</li>
+                <li>
+                  Spearheaded secure employee portal development, enabling leave
+                  management, claims processing, and salary slip access with
+                  encryption for sensitive data.
+                </li>
+                <li>
+                  Transformed Operations360 by introducing a paperless workflow
+                  system, enhancing efficiency and security.
+                </li>
+                <li>
+                  Streamlined data transfers across SQL and NoSQL databases
+                  through automated scheduling and encryption, leveraging
+                  React.js, Node.js, Express.js, Docker, Redux, JWT, Bcrypt, and
+                  Socket.io technologies.
+                </li>
               </ul>
+              <p class="tech-stack">
+                Tech stack in use: React.js, Node.js, Express.js, Docker, Redux,
+                JWT, Bcrypt, Socket.io, SQL.
+              </p>
+            </div>
+          </div>
+
+          <div class="partition">
+            <div class="left-part">July 2021 - June 2022</div>
+            <div class="right-part">
+              <h5>Assiociate Software Engineer</h5>
+              <p class="company">
+                Greenwave Solutions Pvt. Ltd., Kolkata, India
+              </p>
+              <ul>
+                <li>
+                  Led the transformation of a JSF monolith to microservices
+                  using React and Spring Boot, enabling real-time data
+                  visualization with web socket integration. Optimized page load
+                  time by 50% (up to 90% for larger datasets) using JavaScript’s
+                  event loop and component separation.
+                </li>
+                <li>
+                  Built Node.js APIs for data transfer and client-facing REST
+                  APIs for seamless product interaction.
+                </li>
+              </ul>
+              <p class="tech-stack">
+                Tech stack used: React.js, Node.js, Express.js, PostgreSQL,
+                Socket.io, Chart.js, Mui, GraphQL, MongoDB, Bootstrap, PTC
+                Thingworx.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h3>TItlwe</h3>
+        <h3>Education</h3>
         <div class="section-content">
           <div class="partition">
-            <div class="left-part">dates</div>
+            <div class="left-part">2016-2021</div>
             <div class="right-part">
-              <h5>Educations</h5>
-              <p>College</p>
-            </div>
-          </div>
-
-          <div class="partition">
-            <div class="left-part">dates</div>
-            <div class="right-part">
-              <h5>Educations</h5>
-              <p>College</p>
-            </div>
-          </div>
-
-          <div class="partition">
-            <div class="left-part">dates</div>
-            <div class="right-part">
-              <h5>Educations</h5>
-              <p>College</p>
+              <p>
+                <strong class="education-name"
+                  >B. Tech. in Computer Science</strong
+                >
+                <br /><span class="education-address"
+                  >University of Calcutta
+                </span>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h4>Skills</h4>
+        <h3>Skills</h3>
         <div class="section-content">
-          <span class="tag-cloud">Ford</span>
-          <span class="tag-cloud">Volvo</span>
-          <span class="tag-cloud">BMW</span>
-          <span class="tag-cloud">Tesla</span>
-          <span class="tag-cloud">Nissan</span>
-          <span class="tag-cloud">Toyota</span>
-          <span class="tag-cloud">Saab</span>
-          <span class="tag-cloud">Porsche</span>
-          <span class="tag-cloud">VW</span>
-          <span class="tag-cloud">Fiat</span>
-          <span class="tag-cloud">Honda</span>
+          <span class="tag-cloud">React.js</span>
+          <span class="tag-cloud">Node.js</span>
+          <span class="tag-cloud">JavaScript</span>
+          <span class="tag-cloud">Java</span>
+          <span class="tag-cloud">SQL</span>
+          <span class="tag-cloud">Docker</span>
+          <span class="tag-cloud">Spring Boot</span>
+          <span class="tag-cloud">Git</span>
+          <span class="tag-cloud">Vue.js</span>
+          <span class="tag-cloud">PostgreSQL</span>
+          <span class="tag-cloud">Next.js</span>
         </div>
       </section>
 
       <section>
-        <h4>Languages</h4>
+        <h3>Languages</h3>
         <div class="section-content">
-          <span class="tag-cloud">Ford</span>
-          <span class="tag-cloud">Volvo</span>
-          <span class="tag-cloud">BMW</span>
-          <span class="tag-cloud">Tesla</span>
-          <span class="tag-cloud">Nissan</span>
-          <span class="tag-cloud">Toyota</span>
-          <span class="tag-cloud">Saab</span>
-          <span class="tag-cloud">Porsche</span>
-          <span class="tag-cloud">VW</span>
-          <span class="tag-cloud">Fiat</span>
-          <span class="tag-cloud">Honda</span>
+          <span class="tag-cloud">English</span>
+          <span class="tag-cloud">Hindi</span>
+          <span class="tag-cloud">Urdu</span>
+          <span class="tag-cloud">Bengali</span>
         </div>
       </section>
     </div>
